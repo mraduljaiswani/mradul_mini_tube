@@ -9,10 +9,7 @@ import {
   getSearchSuggestionData,
   getSearchSuggestionQuery,
 } from "../utils/searchSlice";
-import { Link, useNavigate } from "react-router-dom";
-import ResultPage from "./ResultPage";
-import VideoCard from "./VideoCard";
-import Demo from "./Demo";
+import { useNavigate } from "react-router-dom";
 // import { useYourContext } from "./Context"; // Import your context hook
 
 const Header = () => {
@@ -20,7 +17,6 @@ const Header = () => {
   const navigate = useNavigate();
   const searchQuery1 = useSelector((store) => store.search.searchQuery);
 
-  const [searchQuery, setSearchQuery] = useState("");
   // const [Suggestions, SetSuggestions] = useState([]);
   // const { Suggestions } = useYourContext() || { Suggestions: [] }; // Ensure Suggestions is properly initialized
 
@@ -41,6 +37,7 @@ const Header = () => {
     return () => {
       clearTimeout(timer);
     };
+    // eslint-disable-next-line
   }, [searchQuery1]);
 
   const getSearchSuggestions = async () => {
