@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
-import { API, KEY_V } from "../utils/constants";
-import VideoCard, { AdVideoCard } from "./VideoCard";
+import React, { useEffect } from "react";
+import { API } from "../utils/constants";
+import VideoCard from "./VideoCard";
 import { Link, useSearchParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import SearchVideoCard from "./SearchVideoCard";
@@ -17,6 +17,7 @@ const VideoContainer = () => {
   );
   useEffect(() => {
     getPopularVideos();
+    // eslint-disable-next-line
   }, []);
 
   const [searchParams] = useSearchParams();

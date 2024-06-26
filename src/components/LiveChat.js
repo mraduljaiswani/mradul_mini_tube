@@ -19,6 +19,7 @@ const LiveChat = () => {
       );
     }, 2000);
     return () => clearInterval(i);
+    // eslint-disable-next-line
   }, []);
   return (
     <>

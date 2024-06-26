@@ -13,6 +13,7 @@ const WatchPage = () => {
 
   useEffect(() => {
     dispatch(closeMenu());
+    // eslint-disable-next-line
   }, []);
   return (
     <div className="flex flex-col w-full">

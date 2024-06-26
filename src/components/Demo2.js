@@ -1,5 +1,4 @@
-import React, { useEffect, useMemo, useRef, useState } from "react";
-import { findNthPrime } from "../utils/helper";
+import React, { useEffect, useRef, useState } from "react";
 
 const Demo2 = () => {
   const [y, sety] = useState(0);

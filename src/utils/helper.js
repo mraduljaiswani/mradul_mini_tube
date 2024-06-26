@@ -175,8 +175,6 @@ var nameList = [
   "Paradox",
 ];
 
-var finalName = "";
-
 export function generateRandomNames() {
   var finalName = nameList[Math.floor(Math.random() * nameList.length)];
   //   document.getElementById("uNameInput").value = finalName;
